@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body {
+  margin:90px; /* Remove default body margin */
+  background-color: #f0f0f0; /* Gray background for the entire screen */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #f0f0f0; /* Gray background */
+  padding: 20px; /* Padding all directions */
+}
+
+.search-container {
+  flex: 75%; /* 75% of container */
+  padding-right: 20px; /* Right padding */
+}
+
+.article {
+  flex: 25%; /* 25% of container */
+  padding-left: 20px; /* Left padding */
+  margin-top: 30px;  
+}
+.article-button{
+  display: flex;
+  flex-direction: row;
+}
+.button-1{
+  margin-right: 10px;
+  background-color: #61dafb;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px 10px;
   color: white;
+  cursor: pointer;
+}
+.button-2{
+  border-radius: 5px;
+  border-color: black;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.article-border {
+  border: 1px solid rgb(213, 207, 207);
+  padding: 10px; /* Adjusted padding */
+  margin-bottom: 20px;
+}
+.divider {
+  border-left: 1px solid rgb(213, 207, 207); /* Vertical line between articles */
+  margin-left: 10px; /* Adjust the spacing between articles */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
